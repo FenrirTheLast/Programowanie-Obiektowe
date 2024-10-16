@@ -1,3 +1,5 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Zestaw1 {
     public static void main(String[] args) {
@@ -75,23 +77,38 @@ public class Zestaw1 {
         //zad10
         String zdanie5 = "%s to najlepsza książka napisana przez %s ";
         String tytul = "IT";
-        String autor = "Stephen King";
+        String autor = "Stephen'a King'a";
         String zdanie_z_formatem_2 = String.format(zdanie5,tytul,autor);
         System.out.println(zdanie_z_formatem_2);
 
         //zad11
+        for(int i = 0; i < 5; i++){
+            System.out.print("wodrze ");
+        }
+        System.out.println(" ");
 
+        //zad12
+        LocalDateTime currentDateTime = LocalDateTime.now();
 
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String data = currentDateTime.format(dateFormatter);
 
+        DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+        String czas = currentDateTime.format(timeFormatter);
 
+        System.out.println("Dzisiaj jest " + data + " godzina " + czas);
 
-
-
-
-
-
+        //zad13
+        int[] numery = { 54, 103, 241, 67, 9999, "Damian Wilk".length(), 175217};
+        for (int numer : numery) {
+            if(Character.isValidCodePoint(numer)){
+                char znak = (char) numer;
+                System.out.println("Numer: " + numer + " -> Znak: " + znak);
+            } else {
+                System.out.println("Numer: " + numer + " jest poza zakresem znaków.");
+            }
+        }
     }
 }
-
 
 
