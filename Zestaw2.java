@@ -120,7 +120,7 @@ public class Zestaw2 {
             double modulo_7 = x % 7;
             int czesc_calkowita_z_dzielenia_przez_4 = (int) x/ 4;
             double potega_45 = Math.pow(x,45);
-            int iloraz_bitowy_67 = (int) x & 67;
+            int iloczyn_bitowy_67 = (int) x & 67;
             int suma_bitowa_59 = (int) x | 59;
             int xor_z_23 = (int) x ^ 23;
             int przesuniecie_w_lewo = (int) x << 5;
@@ -133,7 +133,7 @@ public class Zestaw2 {
             System.out.println("Modulo 7: "+ modulo_7);
             System.out.println("Część całkowita z dzilenia przez 4: " + czesc_calkowita_z_dzielenia_przez_4);
             System.out.println("Podniesiona do potęgi 45: " + potega_45);
-            System.out.println("Iloraz bitowy z 67: " + iloraz_bitowy_67);
+            System.out.println("Iloczyn bitowy z 67: " + iloczyn_bitowy_67);
             System.out.println("Suma bitowa z 59: " + suma_bitowa_59);
             System.out.println("XOR z 23: " + xor_z_23);
             System.out.println("Przesunięta o 5 bitów w lewo: " + przesuniecie_w_lewo);
