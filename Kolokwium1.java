@@ -86,7 +86,7 @@ public class Kolokwium1 {
     }
 
     //zad7
-    public static void minMaxsekwencjaCollatze(int n, int c){
+    public static void minMaxSekwencjaCollatza(int n, int c){
         int orginalny = c;
         int min = orginalny;
         int max = orginalny;
@@ -135,7 +135,7 @@ public class Kolokwium1 {
         sekwencjaCollatza(10,6);
 
         //zad7
-        minMaxsekwencjaCollatze(10,6);
+        minMaxSekwencjaCollatza(10,6);
 
 
 
