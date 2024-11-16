@@ -16,7 +16,8 @@ public class Trening4 {
     }
 
 
-    //Wypisz w granicach n wszystkie możliwe zestawy współczynników funkcji kwadratowej dla których istnieją rozwiązania.
+    //Wypisz w granicach n wszystkie możliwe zestawy współczynników funkcji 
+    //kwadratowej dla których istnieją rozwiązania.
     //funKwaRozwiazania(n)
 
     public static void funKwaRozwiazania(int n) {
@@ -568,5 +569,24 @@ public class Trening4 {
         int[] tab = {1,2,3};
         podzbiory(tab);
         System.out.println();
+
+        //Wyszukiwać kolejne elementy, które będą dodatnie 
+        //lub ujemne 
+        
+         // Krok 1: Tworzymy listę liczb
+        int[] liczby = {1, -2, 3, -4, 5, -6, 7, -8};
+        
+        // Krok 2: Wyświetlamy informację, co robimy
+        System.out.println("Szukamy liczb, które są na przemian dodatnie i ujemne:");
+
+        // Krok 3: Sprawdzamy każdą liczbę i kolejną obok niej
+        for (int i = 0; i < liczby.length - 1; i++) {
+            // Czy obecna liczba jest dodatnia, a następna ujemna?
+            // Lub odwrotnie: obecna ujemna, a następna dodatnia?
+            if ((liczby[i] > 0 && liczby[i + 1] < 0) || (liczby[i] < 0 && liczby[i + 1] > 0)) {
+                // Jeśli tak, wyświetlamy je
+                System.out.println(liczby[i] + " i " + liczby[i + 1]);
+            }
+        }
     }
 }
